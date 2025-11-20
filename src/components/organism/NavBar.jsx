@@ -7,7 +7,7 @@ import ProfileMenu from "../molecules/ProfileMenu";
 import HelpMenu from "../molecules/HelpMenu";
 import CartMenu from "../molecules/CartMenu";
 
-import "./Navbar.css";
+import "./NavBar.css";
 
 const Navbar = () => {
   return (
