@@ -1,0 +1,41 @@
+.search-parent{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+}
+.search-bar {
+  display: flex;
+  border: 1px solid #9ca3af;
+  border-radius: 6px;
+  width: 500px;
+  gap: 8px;
+  height: 45px;
+  padding: 0 15px;
+  align-items: center;
+}
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+.search-bar input::placeholder {
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  opacity: 0.8;
+
+}
+
+/* Hide the full search bar on tablet & mobile */
+@media (max-width: 1023px) {
+  .search-parent {
+    display: none !important;
+  }
+}
+

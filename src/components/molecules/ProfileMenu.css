@@ -1,0 +1,16 @@
+.profile-menu{
+    display: flex;
+    gap: 10px;
+}
+.span-dropdown{
+    display: flex;
+    gap: 10px;
+}
+.profile-icon{
+    width: 40px;
+}
+@media (max-width: 768px) {
+    .span-dropdown{
+    display: none;
+    }
+}

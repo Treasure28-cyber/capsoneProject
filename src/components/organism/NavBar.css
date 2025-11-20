@@ -1,0 +1,103 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: black;
+  margin: 3px 0;
+}
+
+.profile-menu,
+.help-menu,
+.cart-menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-menu {
+  position: relative;
+}
+
+.cart-count {
+  background: orange;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
+/* ==============================
+   TABLET / MOBILE (≤ 768px)
+============================== */
+@media (max-width: 768px) {
+
+  /* GENERAL NAV SIZING */
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .left-section {
+    gap: 15px;
+  }
+
+  .right-section {
+    gap: 20px;
+  }
+
+  .nav-search-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* SEARCH BAR BEHAVIOR */
+  .desktop-search {
+    display: none; /* hide large search bar */
+  }
+
+
+  /* HIDE HELP MENU */
+  .help-menu {
+    display: none !important;
+  }
+
+  /* NAVBAR GRID */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* REMOVE HUGE GAPS */
+  .left-section,
+  .right-section {
+    gap: 15px !important;
+  }
+}
+
+/* ==============================
+   DESKTOP VIEW (> 768px)
+============================== */
+.mobile-search {
+  display: none;
+}

@@ -1,0 +1,16 @@
+
+.logo { display:flex; align-items:center; height:28px; }
+.logo-img { height:20px; width:auto; display:block; }
+
+.nav-logo {
+  width: 75%;
+  height: auto;
+}
+
+@media (max-width:768px) {
+  .logo { height:30px;width: 100%; }
+  .logo-img { height:24px; width: 100%; }
+}
+@media (max-width:480px) {
+  .logo-img { height:30px; }
+}

@@ -1,0 +1,14 @@
+body{
+  background-color: #f1f1f2;
+  margin: 0;
+}
+/* global - paste once */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html,body { width:100%; overflow-x:hidden; }
+
+img, svg { max-width:100%; height:auto; display:block; }
+
+.flex-item { min-width: 0; } /* use this on flex children that can shrink */

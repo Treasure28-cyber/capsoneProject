@@ -1,0 +1,16 @@
+.cart-menu {
+  display: flex;
+  align-items: center; 
+}
+
+.cart-icon {
+  /* width: 40px; */
+  object-fit: contain;
+  display: block;           /* removes inline-image extra spacing */
+}
+
+@media (max-width: 768px) {
+  .cart-span{
+    display: none;
+  }
+}

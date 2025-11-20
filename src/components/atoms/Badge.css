@@ -1,0 +1,6 @@
+.badge-icon {
+  width: 5rem;       /* Perfect Jumia size */
+  height: 5rem;      /* Square = perfect alignment */
+  object-fit: contain;
+  display: block;
+}

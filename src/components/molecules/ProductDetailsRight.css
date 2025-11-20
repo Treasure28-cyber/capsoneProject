@@ -1,0 +1,224 @@
+.pdr-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+/* LABEL BUTTONS */
+.top-labels {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.official-store-org {
+  background: #266071;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.pay-delivery {
+  background: #e71600;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* PRODUCT TITLE */
+.product-title1 {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+/* BRAND */
+.brand-line {
+  margin-top: -3px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.brand-link {
+  color: #0d50a4;
+  cursor: pointer;
+}
+
+/* FLASH SALE CARD */
+.flash-sale-card {
+  border: 1px solid #e61601;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.flash-header {
+  background: #e61601;
+  color: white;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.fh-left {
+  font-weight: bold;
+}
+
+.flash-body {
+  padding: 12px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.new-price {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 14px;
+}
+
+.discount-tag {
+  background: #ffb585;
+  color: #c94c00;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.stock-progress{
+    display: flex;
+    margin-top: 4px;
+    align-items: center;
+}
+.stock-left {
+  font-size: 10px;
+  color: #555;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #c8c7cc;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.progress-fill {
+  width: 60%;
+  height: 100%;
+  background: #f68b1e;
+  border-radius: 5px;
+}
+
+/* SHIPPING */
+.shipping-info {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.ship-cross {
+  color: #000000;
+  margin-right: 6px;
+}
+
+/* RATINGS */
+.rating-section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.rating-section img {
+  width: 18px;
+}
+
+.rating-count {
+  font-size: 12px;
+  margin-left: 6px;
+  color: #0d50a4;
+}
+
+/* ADD TO CART */
+.add-cart-btn {
+  background: #f68b1e;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+}
+
+.add-cart-btn:hover{
+  background-color: #e65e00;
+}
+
+.cart-icon {
+  width: 18px;
+}
+
+/* PROMOTIONS */
+.promotions-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.promo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.promo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+}
+
+.promo-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff7a00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-icon img {
+  width: 18px;
+}
+
+.promo-text {
+  font-size: 13px;
+  flex: 1;
+  color: #0d50a4;
+}
+
+@media (max-width: 480x) {
+  .flash-sale-card {
+    width: 95%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,14 @@
+.nav-search-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  cursor: pointer;
+  display: none; /* hidden by default */
+}
+
+/* Show icon only on tablet & mobile */
+@media (max-width: 1023px) {
+  .nav-search-icon {
+    display: block;
+  }
+}
