@@ -1,5 +1,5 @@
 // src/components/atoms/Logo.jsx
-import "./logo.css";
+import "./Logo.css";
 import jumiaLogo from "../../assets/jumia-logo 1.png";
 
 const Logo = () => {
