@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ProductDisplay from "./ProductDisplay";
 import "./ProductLayout.css";
-import RightSidebar from "./RightSideBar";
+import RightSidebar from "./RightSidebar";
 
 const ProductLayout = () => {
 

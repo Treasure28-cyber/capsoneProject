@@ -1,4 +1,4 @@
-import "./RightSideBar.css";
+import "./RightSidebar.css";
 
 const RightSidebar = ({ products, onSelectProduct }) => {
   return (
