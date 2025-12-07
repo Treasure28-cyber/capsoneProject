@@ -11,15 +11,15 @@ const ProductDisplay = ({ product }) => {
     <div className="product-description">
       <div className="product-top">
         
-            {/* LEFT SIDE — IMAGE + BADGES */}
-            <div className="product-gallery">
-            <ProductGallery product={product} />
-            </div>
+        {/* LEFT SIDE — IMAGE + BADGES */}
+        <div className="product-gallery">
+          <ProductGallery product={product} />
+        </div>
 
-            {/* RIGHT SIDE — TITLE + PRICE + RATING */}
-            <div className="product-details-wrapper">
-            <ProductDetailsRight product={product} />
-            </div>
+        {/* RIGHT SIDE — TITLE + PRICE + RATING */}
+        <div className="product-details-wrapper">
+          <ProductDetailsRight product={product} />
+        </div>
       </div>
 
       {/* DESCRIPTION BELOW */}

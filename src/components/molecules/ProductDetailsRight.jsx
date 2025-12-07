@@ -1,8 +1,23 @@
 import "./ProductDetailsRight.css";
 import staIcon from "../../icons/star-full.png";
 import starIcon from "../../icons/star-full-white.png";
+import cartIcon from "../../assets/white-cart-icon.png";
 
-const ProductDetailsRight = () => {
+const ProductDetailsRight = ({ product }) => {
+  
+  const usdToNgnRate = 1450.82; // converting to naira 
+  
+  const priceInNaira = Math.round(product.price * usdToNgnRate);
+  
+  // Calculate the old price for the discount
+  const oldPriceInNaira = Math.round(priceInNaira * 1.4);
+
+
+  if (!product) {
+    return <div>Loading product...</div>;
+  }
+
+
   return (
     <div className="pdr-container">
 
@@ -14,12 +29,12 @@ const ProductDetailsRight = () => {
 
       {/* TITLE */}
       <h2 className="product-title1">
-        Skyrun 46 Litres Single Door Fridge (BCD-50MY) - Silver
+        {product.title}
       </h2>
 
       {/* BRAND */}
       <p className="brand-line">
-        Brand: <span className="brand-link">Skyrun | Similar products from Skyrun</span>
+        Brand: <span className="brand-link">{product.category}</span>
       </p>
 
       {/* FLASH SALE */}
@@ -31,8 +46,8 @@ const ProductDetailsRight = () => {
 
         <div className="flash-body">
           <div className="price-row">
-            <span className="new-price">₦ 105,990</span>
-            <span className="old-price">₦ 150,000</span>
+            <span className="new-price">₦ {priceInNaira}</span>
+            <span className="old-price">₦ {oldPriceInNaira}</span>
             <span className="discount-tag">-29%</span>
           </div>
             <div className="stock-progress">
@@ -65,8 +80,8 @@ const ProductDetailsRight = () => {
 
       {/* ADD TO CART */}
       <button className="add-cart-btn">
-        <img src="/icons/cart-temp.png" className="cart-icon" alt="cart" />
-        Add to cart
+        <img src={cartIcon} className="cart-icon" alt="cart" />
+        <div className="cart-name">Add to cart</div> 
       </button>
 
       {/* PROMOTIONS */}

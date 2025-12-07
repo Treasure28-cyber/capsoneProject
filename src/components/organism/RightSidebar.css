@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  max-height: 130vh; /* keep sidebar within screen */
+  overflow-y: auto; /* enable vertical scrolling */
+  padding-right: 5px; /* optional: space for scrollbar */
 }
 
 .sidebar-title {

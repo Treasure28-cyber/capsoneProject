@@ -7,7 +7,7 @@ body{
 *::before,
 *::after { box-sizing: border-box; }
 
-html,body { width:100%; overflow-x:hidden; }
+/* html,body { width:100%; overflow-x:hidden; } */
 
 img, svg { max-width:100%; height:auto; display:block; }
 
