@@ -1,6 +1,6 @@
 // src/components/atoms/SearchBar.jsx
 import Button from "./Button";
-import "./searchbar.css";
+import "./searchBar.css";
 import searchIcon from "../../assets/search.png";
 
 const SearchBar = () => {

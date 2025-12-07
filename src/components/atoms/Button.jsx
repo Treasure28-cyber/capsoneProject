@@ -1,5 +1,5 @@
 // src/components/atoms/Button.jsx
-import "./button.css";
+import "./Button.css";
 
 const Button = ({ label, onClick, type }) => {
   return (
